@@ -1,0 +1,1109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px white;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+
+.flecha img, .menu-hamb .our-fruits img{
+    margin: 0 .4rem;
+    width: .5rem;
+}
+
+.flecha{
+    overflow: hidden;
+}
+
+ul{
+    display: flex;
+}
+
+.fruits-submenu, .learn-submenu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 6rem;
+    padding: 0 2rem;
+    top: 5.5rem;
+    left: -2rem;
+
+}
+.learn-submenu{
+    width: 7rem;
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+
+}
+
+li{
+    list-style: none;
+    position: relative;
+}
+
+nav li{
+    margin: 0 .7rem;
+}
+
+.flecha a, .store, .fruits-submenu a, .learn-submenu a, .oishii p, .info p, .collaboration p, .berries-types p, .the-berry a, .rubi p, .rubi a, .farm a, .kimmel-show h4, .area-text h5, .area-text a, .footer h5, .footer h4, .footer p, .line h5, form a, .our-fruits a,summary{
+    font-family: Poppins, sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.flecha a, .store, .fruits-submenu a, .learn-submenu a, .oishii a, .info a, .collaboration a, .the-berry a, .farm a, .area-text a, summary{
+    text-transform: uppercase;
+}
+
+h1, .oishii a, h2, .collaboration a, .collaboration h3, .berries-types h3, .rubi h3, .farm h3, .kimmel-show h3, .area-text h4{
+    font-family: Merriweather, serif;
+    font-size: .8rem;
+    font-weight: 400;
+    
+}
+.store{
+    border-radius: 1.5rem;
+    border: solid 1px white;
+    padding: .5rem .5rem;
+    color: white;
+}
+
+.store:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
+.flecha a, .store, h1, .oishii p, .oishii a, .collaboration a, .collaboration, .berries-types, .the-berry a, .tomato h3, .farm h3, .farm a, .footer, .footer a, .line h5, .line a{
+    color: white;
+}
+
+.fruits-submenu a, .learn-submenu a, .rubi a, .area-text a, .our-fruits a{
+    color: black;
+}
+
+.logotipo img, .collaboration div img{
+    width: 7rem;
+}
+
+.store-div{
+    margin: 0 4rem;
+}
+
+.fruits:hover .fruits-submenu, .learn:hover .learn-submenu{
+    display: block;
+    
+
+}
+
+.fruits-submenu a, .learn-submenu a, h2, .berries-types h3, .tomato, .rubi h3, .kimmel-show h4, footer h5, footer h4, .our-fruits a{
+    text-transform: capitalize;
+}
+
+.fruits:hover img, .learn:hover img{
+    transform: rotate(180deg);
+}
+
+.info p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.flecha a::after, .fruits-submenu a::after, .learn-submenu a::after, .oishii a::after, .collaboration a::after, .farm a::after, .area-text a::after, form a::after, .footer a::after, .line a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    transition: left .8s;
+
+}
+.fruits-submenu a::after, .learn-submenu a::after, .area-text a::after{
+    background-color: red;
+}
+
+a:hover::after, .fruits-submenu a:hover::after, .learn-submenu a:hover::after, .oishii a:hover, .collaboration a:hover, .farm a:hover, .area-text a:hover, form a:hover, .footer-text a:hover, .line a:hover{
+    left: 0;
+}
+
+.fruits, .learn{
+    padding: 2.5rem 0;
+}
+
+.flecha ,.fruits-submenu h4, .learn-submenu h4, .area-text p, .farm p, .oishii-text a, form h5, .footer-text h5, .line h5{
+    overflow: hidden;
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 44rem;
+    
+}
+
+#video-background{
+    position: absolute;
+    top: -16rem;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.oishii{
+    margin: 1rem 3rem;
+    overflow: hidden;
+}
+
+h1, .kimmel-show h3{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.slider{
+    width: 75rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 3rem 0;
+}
+.slider-img{
+    display: flex;
+    animation: sliding 10s linear infinite forwards;
+    
+}
+
+.slider img{
+    width: 7rem;
+    margin: 0 2.5rem;
+    
+    
+}
+
+.carousel-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide{
+    width: 12rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@keyframes sliding {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+#berries{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.berry{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.squared-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    border-radius: 10rem;
+    width: 20rem;
+    margin: 0 3.5rem;
+
+}
+
+.square1{
+    background-image: url("Img/filadelfia.jpg");
+}
+
+.square2{
+    background-image: url("Img/berries.jpg");
+}
+
+.square3{
+    background-image: url("Img/non-gmo.jpg");
+}
+
+.info{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10rem;
+    position: relative;
+    bottom: 1.1rem;
+    display: none;
+    background-color: #FBD4D6;
+}
+
+.info a{
+    color: #EE647A;
+}
+.button{
+    overflow: hidden;
+    margin-left: 5.5rem;
+}
+
+h2, .collaboration h3, .berries-types h3, .rubi h3, .tomato h3, .farm h3, .area-text h4{
+    font-size: 1.8rem;
+}
+h2{
+    color: #70A539;
+    position: relative;
+    top: 20rem;
+    text-align: center;
+}
+
+h2:hover{
+    color: #EE647A;
+}
+
+.item2{
+    background-color: #D9ECC7;
+}
+
+.text{
+    position: relative;
+    top: 6rem;
+    left: 0rem;
+}
+
+.item2 .text{
+    top: 3rem;
+}
+
+.info-text{
+    text-align: center;
+}
+
+.item1 .text{
+    top: 8rem;
+}
+
+.squared-image:hover .info{
+    display: block;
+}
+
+.squared-image:hover h2{
+    top: 0;
+}
+
+.oishii-market{
+    padding: 9rem 7rem;
+}
+.collaboration{
+    background-image: url("Img/background-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.collaboration > img{
+    width: 28rem;
+    margin-top: 3rem;
+}
+
+.collaboration div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+.collaboration h3, .berries-types h3{
+    margin-bottom: 0;
+}
+
+
+.collaboration a:hover, #hero a:hover{
+    border-bottom: none;
+}
+
+.berries-types{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    
+ 
+}
+
+.the-berry img{
+    width: 30rem;
+    height: 37rem;
+    
+}
+.the-berry{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.the-berry h3{
+    color: #c3191e;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.the-berry p{
+    font-size: 1.2rem;
+}
+
+.the-berry p, .the-berry a{
+    color: #092E26;
+}
+
+.the-berry a{
+    border: solid 2px;
+    padding: 1rem 5rem;
+    font-size: 1rem;
+}
+
+.omakase-berry, .koyo-berry{
+    position: relative;
+    top: 5rem;
+    width: 14rem;
+    height: 27rem;
+    padding: 0 16rem;
+    box-shadow: .3rem .3rem 1rem gray;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.omakase-berry{
+    left: 2rem;
+}
+.koyo-berry{
+    right: 2rem;
+}
+
+.rubi-tomato{
+    display: flex;
+    padding: 5rem 0;
+}
+.rubi-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104rem;
+    background-color: #ACC5B1;
+}
+.rubi-product img{
+    width: 40%;
+}
+
+.rubi{
+    width: 104rem;
+    padding-left: 5rem;
+}
+
+.rubi a, .button{
+    border: solid 2px red;
+    padding: .5rem 1rem;
+    width: fit-content;
+    border-radius: 5rem;
+    
+}
+
+.rubi p{
+    margin-bottom: 2rem;
+    font-size: .9rem;
+}
+.rubi a:hover{
+    background-color: red;
+    color: #ACC5B1;
+}
+
+.tomato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    right: 25rem;
+    background-color: #A61E22;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+.tomato img{
+    width: 7rem;
+}
+
+.farm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.farm-circles{
+    display: flex;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+
+.farm-background{
+    background-image: url("Img/farm.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 93rem;
+    height: 48rem;
+}
+
+.happy-strawberries{
+    background-color: #D5E1D6;
+}
+#happy-strawberries{
+    width: 25rem;
+}
+
+.kimmel-show{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.instagram-posts{
+    width: 109rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.kimmel-quote h4:first-of-type{
+    margin-bottom: 0;
+    padding: .4rem 0;
+}
+.kimmel-quote h4:last-of-type{
+    margin-top: 0;
+}
+
+.hands{
+    background-color: white;
+    padding: 4rem;
+}
+.area-availability{
+    background-color: #F3F0E7;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.left, .right{
+    position: absolute;
+    width: 24rem;
+}
+.area-text h4{
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.area-text h5{
+    margin-bottom: 0;
+}
+.area-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    left: -4rem;
+    top: -3rem;
+}
+
+.right{
+    right: -4rem;
+    top: -4rem;
+}
+
+.post{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18rem;
+    width: 16%;
+    
+}
+
+.brillo{
+    height: 100%;
+    width: 17.5rem;
+}
+.inst1{
+    background-image: url("Img/inst-1.jpg");
+}
+
+.inst2{
+    background-image: url("Img/inst-2.jpg");
+}
+.inst3{
+    background-image: url("Img/inst-3.jpg");
+}
+
+.inst4{
+    background-image: url("Img/inst-4.jpg");
+}
+
+.inst5{
+    background-image: url("Img/inst-5.jpg");
+}
+
+.inst6{
+    background-image: url("Img/inst-6.jpg");
+}
+
+.camara{
+    position: relative;
+    width: 2rem;
+    bottom: 0;
+    left: 12.5rem;
+}
+
+
+.inst-logo{
+    visibility: hidden;
+}
+
+.post:hover .brillo{
+    background-color: #0000004d;
+}
+.post:hover .brillo .inst-logo{
+    visibility: visible;
+   
+}
+
+
+.post1, .post4, .post5{
+    position: relative;
+    top: 9rem;
+    right: -7rem;
+}
+
+.post2, .post3{
+    top: 9rem;
+    right: -8rem;
+    position: relative;
+}
+
+
+.post6{
+    top: 9rem;
+    right: -5rem;
+    position: relative;
+}
+
+.inst-logo{
+    width: 2rem;
+}
+
+footer{
+    background-color: #DA2924;
+}
+
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer h4{
+    font-size: 1.1rem;
+}
+
+.iconos img{
+    width: 1rem;
+}
+
+.footer p{
+    font-size: .5rem;
+}
+.oishii-logo img{
+    width: 9rem;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px white;
+    padding: 0 2rem;
+}
+
+.iconos img{
+    margin: 0 .5rem;
+}
+
+.line div:nth-child(2){
+    display: flex;
+}
+
+.line div:nth-child(2) h5{
+    margin: 0 .5rem;
+}
+
+.transparent{
+    background-color: transparent;
+    border-radius: 5rem;
+    border: solid 1px rgba(255, 255, 255, 0.726);
+    outline: none;
+    padding: .5rem 2rem;
+}
+
+::placeholder{
+    color: white;
+}
+
+form h5:last-of-type{
+    margin-left: 1rem;
+}
+
+.footer .h5-text{
+    text-transform: none;
+    margin: 0;
+    padding-bottom: .9rem;
+}
+
+span{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.hamb{
+    cursor: pointer;
+    padding: 2rem;
+    z-index: 3;
+    display: none;
+}
+
+.hamb-line{
+    background-color: white;
+    display: block;
+    height: 2px;
+    width: 1.5rem;
+    position: relative;
+}
+
+.hamb-line::before, .hamb-line::after{
+    background-color: white;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.menu-lateral:checked ~ .hamb .hamb-line::after, .menu-lateral:checked ~ .hamb .hamb-line::before{
+    background-color: black;
+}
+
+.hamb-line::after{
+    top: .5rem;
+}
+
+.hamb-line::before{
+    bottom: .5rem;
+}
+
+.menu-lateral{
+    display: none;
+}
+.menu-lateral:checked ~ .hamb .hamb-line::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+.menu-lateral:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.menu-lateral:checked ~ .hamb .hamb-line::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-hamb{
+    background-color: white;
+    height: 58rem;
+    width: 15rem;
+    position: absolute;
+    top: 0;
+    right: 26rem;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.menu-logo img{
+    width: 4rem;
+}
+.menu-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 1.2rem;
+}
+
+details{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.our-fruits img{
+    position: relative;
+}
+
+summary{
+    list-style: none;
+}
+.our-fruits .fruits-line{
+    bottom: 1.3rem;
+    left: 12rem;
+}
+
+.our-fruits{
+    padding: 1rem 1.5rem;
+}
+
+
+.fine-line{
+    background-color: #0000001c;
+    width: 13rem;
+    height: 2px;
+    display: block;
+    position: relative;
+    left: 1rem;
+}
+
+details[open] .fruits-line{
+    display: none;
+}
+
+.menu-hamb .iconos{
+    position: relative;
+    top: 42rem;
+    padding: 0 1.5rem;
+}
+
+
+.menu-lateral:checked ~ .menu-hamb{
+    right: 11rem;
+    visibility: visible;
+    transition: right ease-out .3s;
+
+}
+
+.menu-lateral:checked ~ .hamb{
+    margin: 0 9rem 2rem;
+}
+
+.dark{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.411);
+    visibility: hidden;
+}
+
+.black{
+    background-color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hamb{
+        display: block;
+    }
+    #hero{
+        height: 30rem;
+    }
+    #video-background{
+        width: 57rem;
+        top: -5rem;
+        left: -31rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+    p, .our-fruits a{
+        font-size: .7rem;
+    }
+    .oishii{
+        margin: .5rem 1rem;
+    }
+
+    nav, .store-div{
+        display: none;
+    }
+
+    .our-fruits a{
+        font-weight: 500;
+        padding: .5rem 0;
+    }
+
+    #berries{
+        padding: 0;
+    }
+
+    .squared-image, .info{
+        border-radius: 0;
+        margin: 12rem 0;
+    }
+    .info{
+        display: block;
+        bottom: -7.9rem;
+        height: 13rem;
+    }
+    .text{
+        top: 1rem;
+    }
+    .berry{
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        top: -42rem;
+    }
+
+    .item2{
+        height: 16rem;
+    }
+    .item2 .text{
+        top: .2rem;
+    }
+
+    .oishii-market{
+        padding: 9rem 1rem;
+    }
+
+    .collaboration{
+        padding-top: 4rem;
+    }
+
+    .collaboration > img{
+        width: 17rem;
+    }
+    .collaboration div:first-child{
+        flex-direction: row;
+    }
+
+    .collaboration div img{
+        width: 4rem;
+        margin: 0 .7rem;
+    }
+
+    .the-berry{
+        padding: 2.5rem 0;
+        flex-direction: column;
+    }
+    .the-berry img{
+        width: 24rem;
+        height: 37rem;
+        margin: 0 1rem;
+    }
+    .koyo-berry{
+        right: -1rem;
+    }
+    .omakase-berry, .koyo-berry{
+        top: -5rem;
+        z-index: -1;
+        width: 12rem;
+        height: 28rem;
+        padding: 0 6rem;
+        box-shadow: none;
+        border: solid 1px #00000087;
+    }
+    .the-berry h3{
+        font-size: 2.5rem;
+    }
+    .the-berry:last-child{
+        position: relative;
+        bottom: 27rem;
+    }
+    .the-berry a{
+        text-wrap: nowrap;
+    }
+
+    .omakase-berry{
+        top: 62rem;
+        left: 1rem;
+    }
+
+    .rubi-product{
+        width: 100%;
+        flex-direction: column;
+    }
+    .rubi-product img{
+        width: 26rem;
+    }
+    .rubi{
+        width: 21rem;
+        margin: 0 0 2rem;
+    }
+
+    .tomato{
+        /* height: 50%;
+        padding: 0 .5rem;
+        right: 10rem; */
+        visibility: hidden;
+    }
+
+    .farm-background{
+        width: 25rem;
+    }
+
+    #happy-strawberries{
+        width: 21rem;
+        padding: 2rem 0;
+    }
+
+    .kimmel-show h3, .area-text h4{
+        font-size: 1rem;
+    }
+    .kimmel-quote h4:last-of-type, .area-text h5, .area-text h4{
+        font-weight: bold;
+    }
+
+    .area-availability{
+        width: 24rem;
+        margin: 0 -3rem;
+        padding: 6rem 0;
+    }
+
+    .area-text h4{
+        text-align: center;
+    }
+
+    .right, .left{
+        width: 10rem;
+    }
+    .right{
+        right: -0.5rem;
+        top: 12rem;
+    }
+    .left{
+        left: -4.5rem;
+    }
+    .instagram-posts{
+        width: 25.45rem;
+    }
+    .post{
+        width: 37%;
+        height: 9rem;
+        margin: 0 -.5rem;
+    }
+    .inst6 .camara{
+        left: 6.5rem;
+    }
+    .inst3 .camara, .inst2 .camara{
+        left: 4.5rem;
+    }
+
+    .oishii-logo img{
+        width: 18rem;
+        padding: 2rem 0;
+    }
+    form{
+        flex-direction: column;
+        margin-right: 7rem;
+    }
+    .footer div:last-child{
+        padding: 0 2rem;
+    }
+
+    form h5:last-of-type{
+        margin-left: -11rem;
+    }
+    .footer p{
+        font-size: .7rem;
+    }
+    .iconos{
+        padding: 1rem 0;
+    }
+    .line div:last-child{
+        margin: auto;
+    }
+
+    a, .area-text a{
+        text-decoration: underline white;
+    }
+    .rubi a, .squared-image a{
+        text-decoration: none;
+    }
+    .area-text a{
+        text-decoration-color: red;
+    }
+    .logotipo{
+        margin-right: 10rem;
+    }
+    .logotipo img{
+        width: 5rem;
+    }
+}
