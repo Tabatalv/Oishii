@@ -1107,3 +1107,34 @@ details[open] .fruits-line{
         width: 5rem;
     }
 }
+
+@media screen and (min-width:1400px) and (max-width:1522px){
+    .instagram-posts, .rubi-product{
+        width: 95rem;
+    }
+    .post{
+        width: 16.66%;
+    }
+    
+    
+}
+@media screen and (min-width:2000px) {
+    #hero{
+        height: 60rem;
+    }
+    .rubi-product{
+        width: 129rem;
+        padding: 0 8.5rem;
+    }
+    
+
+    .post{
+        width: 16.66%;
+    }
+   
+    .instagram-posts{
+        width: 126rem;
+    }
+   
+    
+}
